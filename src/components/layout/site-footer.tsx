@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { GithubIcon, InstagramIcon, LinkedinIcon, XIcon } from "@/components/finly/social-icons";
+import { KworkIcon, TelegramIcon } from "@/components/finly/social-icons";
 
 const FOOTER_COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
   {
@@ -40,10 +40,8 @@ const FOOTER_COLUMNS: { title: string; links: { label: string; href: string }[] 
 ];
 
 const SOCIAL_LINKS = [
-  { label: "X (Twitter)", href: "#", icon: XIcon },
-  { label: "Instagram", href: "#", icon: InstagramIcon },
-  { label: "LinkedIn", href: "#", icon: LinkedinIcon },
-  { label: "GitHub", href: "#", icon: GithubIcon },
+  { label: "Telegram", href: "https://t.me/foy4ik", icon: TelegramIcon },
+  { label: "Kwork", href: "https://kwork.ru/user/dimfilhf", icon: KworkIcon },
 ];
 
 export function SiteFooter() {
@@ -66,12 +64,15 @@ export function SiteFooter() {
                 <Link
                   key={label}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
                   className="flex size-9 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-forest"
                 >
                   <Icon className="size-4" />
                 </Link>
               ))}
+              <span className="ml-1 text-sm text-muted-foreground">by foy4ik</span>
             </div>
           </div>
 

@@ -52,3 +52,29 @@ export function GithubIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export function TelegramIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
+      <path
+        d="M4 11.5 19.5 5.3c.7-.3 1.4.3 1.1 1.1l-2.7 13c-.2.9-1.2 1.3-1.9.7l-3.9-3-2 1.9c-.3.3-.7.3-1 .1l.4-3.9 7.2-6.7c.3-.3-.1-.4-.4-.2L8 13.2l-3.8-1.2c-.8-.3-.8-1.2-.2-1.5Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+
+export function KworkIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
+      <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" strokeWidth="1.7" />
+      <path
+        d="M9 7.5v9M9 12l5-4.5M9 12l5 4.5"
+        stroke="currentColor"
+        strokeWidth="1.7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
